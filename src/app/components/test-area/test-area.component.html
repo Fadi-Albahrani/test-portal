@@ -1,0 +1,40 @@
+<div id="exam-area-content" class="grid col-sm-11 mx-auto">
+  <p id="test-information-lable">Test Information</p>
+
+  <div class="jumbotron">
+
+    <div *ngIf="testEnd">
+      <p id="question-promt">{{currentQ.question}}</p>
+
+      <div class="form-check" *ngFor='let answer of answers'>
+        <input class="form-check-input" type="radio" id="{{answer}}" value="{{answer}}" name="choice"
+          (change)="answerSelected($event)">
+        <label class="form-check-label" for="{{answer}}">
+          {{answer}}
+        </label>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div>
+      <a *ngIf="testEnd" class="btn btn-lg" role="button" id="prevBtn" (click)="previousQuestion()">Previous</a>
+
+
+      <a *ngIf="testEnd" class="btn btn-lg" role="button" id="nextBtn" (click)="nextQestion()">Next</a>
+
+    </div>
+
+    <div *ngIf = "showResults">
+      <br>
+      <br>
+      <br>
+      <h5 id="testResult">Your Final Score is {{score}} out of 100, <br> <br> you can click on the logo to do other tests</h5>
+    </div>
+
+
+
+  </div>
+
+</div>

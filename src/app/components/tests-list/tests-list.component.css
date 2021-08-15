@@ -1,0 +1,16 @@
+#Test-Menu-lable{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #525257;
+    padding: 2%;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: #525257;
+}
+
+#content{
+    padding: 2%;
+}

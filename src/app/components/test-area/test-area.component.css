@@ -1,0 +1,45 @@
+#test-information-lable{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #525257;
+    padding: 2%;
+    font-weight: 600;
+}
+
+#exam-area-content{
+    float: right;
+    width: 100%;
+}
+
+
+.jumbotron{
+    background-color: rgb(240, 240, 240);
+    padding: 5%;
+    overflow:auto;
+}
+
+#nextBtn{
+    background-color: #ee913f;
+    color: white;
+    float: right;
+    margin-right: 20%;
+    
+}
+
+#prevBtn{
+    background-color: #ee913f;
+    color: white;
+    float: left;
+    margin-left: 20%;
+    
+}
+
+#question-promt{
+    font-weight: 600;
+}
+
+#testResult{
+    color: red;
+    text-align: center;
+}

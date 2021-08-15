@@ -1,1 +1,21 @@
-<p>tests-list works!</p>
+<div  class="grid col-sm-8 mx-auto">
+    <div id="content" class="row">
+        <div class="grid col-sm-12 col-md-12 col-lg-3" *ngIf = 'hideTestMenu'>
+            <p id="Test-Menu-lable">Test Categories</p>
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor='let testCategory of testCategories'>
+                        <a (click)="startTest()" routerLink="/{{testCategory.CategoryId}}">{{testCategory.categoryName}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- exam area -->
+
+        <div class="grid col-sm-12 col-md-12 col-lg-9 mx-auto" >
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>
