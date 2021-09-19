@@ -13,5 +13,8 @@
 
 - You will see you results when you finish the test
 
+* The project now is containerized using docker and deployed in AWS EC2 instance.
+* try run npm install command before running the app as the node modules files may not be available when cloning the repo
+
 
 The test will start automatically after you select a category
